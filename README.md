@@ -1,3 +1,7 @@
+## Security Research Summary
+
+This repository demonstrates a consensus-level vulnerability in validator set handling within a blockchain consensus module. The issue leads to incorrect validator uniqueness handling, resulting in voting power inflation and proposer selection bias under RoundRobin scheduling.
+
 # validator-set-consensus-bug-poc
 PoC demonstrating duplicate validator entries causing proposer bias in consensus system
 # Validator Duplication in ValidatorSet Causes Proposer Bias and Voting Power Inflation
@@ -103,3 +107,8 @@ Example fix:
 Conclusion
 
 This issue allows a single validator identity to be treated as multiple independent validators, resulting in inflated voting power and biased proposer selection in RoundRobin consensus.
+
+
+## Keywords
+
+consensus vulnerability, blockchain security, validator set, round robin proposer, voting power inflation, duplicate validator bug, rust security, distributed systems bug
